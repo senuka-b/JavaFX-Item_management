@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="437.0" prefWidth="739.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemManagerViewController">
+   <children>
+      <Label blendMode="DARKEN" prefHeight="439.0" prefWidth="172.0" style="-fx-background-color: #333333;" text="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;?import javafx.scene.control.Button?&gt;&lt;Button layoutY=&quot;134.0&quot; mnemonicParsing=&quot;false&quot; prefHeight=&quot;44.0&quot; prefWidth=&quot;107.0&quot; style=&quot;-fx-background-color: #4caf50;&quot; text=&quot;Button&quot; xmlns=&quot;http://javafx.com/javafx/17.0.2-ea&quot; xmlns:fx=&quot;http://javafx.com/fxml/1&quot; /&gt;" />
+      <Label alignment="CENTER" prefHeight="76.0" prefWidth="739.0" style="-fx-background-color: cyan;" text="Inventory Management System" textAlignment="RIGHT" underline="true" wrapText="true">
+         <font>
+            <Font name="Bradley Hand ITC" size="38.0" />
+         </font>
+      </Label>
+      <Button id="btnManageItem" layoutX="8.0" layoutY="154.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="150.0" style="-fx-background-color: #4caf50;" text="Manage Items" textFill="WHITE" />
+      <Button id="btnViewItem" layoutX="8.0" layoutY="229.0" mnemonicParsing="false" onAction="#btnViewItemAction" prefHeight="44.0" prefWidth="150.0" style="-fx-background-color: #4caf50;" text="View Items" textFill="WHITE" />
+      <Label layoutX="63.0" layoutY="101.0" text="Actions" textFill="WHITE" />
+      <TextField id="labelID" fx:id="textFieldID" disable="true" editable="false" layoutX="370.0" layoutY="119.0" promptText="Item ID" />
+      <TextField id="labelName" fx:id="textFieldName" layoutX="370.0" layoutY="163.0" promptText="Enter a name" />
+      <TextField id="labelQuantity" fx:id="textFieldQuantity" layoutX="370.0" layoutY="207.0" promptText="Quantity" />
+      <TextField id="labelDescription" fx:id="textFieldDescription" layoutX="369.0" layoutY="297.0" prefHeight="44.0" prefWidth="150.0" promptText="Description" />
+      <TextField id="labelPrice" fx:id="textFieldPrice" layoutX="370.0" layoutY="251.0" promptText="Price" />
+      <Button id="btnAddItem" layoutX="406.0" layoutY="363.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnAddItemAction" text="Add Item +" />
+   </children>
+</AnchorPane>

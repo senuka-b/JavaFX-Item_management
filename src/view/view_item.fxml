@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewItemsViewController">
+   <children>
+      <TableView id="tblItems" fx:id="tableViewItems" editable="true" layoutX="40.0" layoutY="160.0" prefHeight="200.0" prefWidth="540.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="93.20000457763672" text="ID #" />
+          <TableColumn fx:id="colName" prefWidth="114.39999389648438" text="Name" />
+            <TableColumn fx:id="colQuantity" prefWidth="112.00003051757812" text="Quantity" />
+            <TableColumn fx:id="colPrice" prefWidth="69.4000244140625" text="Price" />
+            <TableColumn fx:id="colDescription" prefWidth="155.20001220703125" text="Description" />
+        </columns>
+      </TableView>
+      <Button id="btnDeleteItem" layoutX="502.0" layoutY="124.0" mnemonicParsing="false" onAction="#btnDeleteItemAction" style="-fx-background-color: red;" text="Delete Item" textFill="WHITE" />
+      <Label layoutX="206.0" layoutY="30.0" text="View Items">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <Button layoutX="40.0" layoutY="124.0" mnemonicParsing="false" onAction="#btnIncreaseQty" text="+" />
+      <Button layoutX="77.0" layoutY="124.0" mnemonicParsing="false" onAction="#btnDecreaseQty" text="-" />
+      <Label layoutX="38.0" layoutY="93.0" text="Increase / Decrease quantity" />
+   </children>
+</AnchorPane>
